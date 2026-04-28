@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>测测你是 MyGO!!!!! / Ave Mujica 里的谁</title>
+  <meta name="description" content="43题四选一，随机打乱选项，测测你更像 MyGO!!!!! 或 Ave Mujica 的哪位成员。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy glass-card">
+        <p class="eyebrow">MyGO!!!!! x Ave Mujica Personality Test</p>
+        <h1>测测你是 MyGO!!!!! / Ave Mujica 里的谁</h1>
+        <p class="hero-text">
+          不是那种三题看穿你灵魂的流水线问卷，而是一套认真参考十位成员气质差异写出来的乐队人格测试。
+          真心、体面、执念、锋利、自由、表演感，全都测一点。
+        </p>
+        <div class="hero-tags">
+          <span>43 题</span>
+          <span>4 选 1</span>
+          <span>10 种结果</span>
+          <span>选项随机打乱</span>
+        </div>
+      </div>
+
+      <div class="hero-side glass-card">
+        <div class="hero-side-head">
+          <p class="eyebrow">Result Pool</p>
+          <h2>十种别扭与闪光</h2>
+        </div>
+        <div class="band-columns">
+          <section>
+            <p class="band-name">MyGO!!!!!</p>
+            <div class="member-cloud">
+              <span>高松灯</span>
+              <span>千早爱音</span>
+              <span>椎名立希</span>
+              <span>长崎爽世</span>
+              <span>要乐奈</span>
+            </div>
+          </section>
+          <section>
+            <p class="band-name">Ave Mujica</p>
+            <div class="member-cloud">
+              <span>丰川祥子</span>
+              <span>若叶睦</span>
+              <span>三角初华</span>
+              <span>八幡海铃</span>
+              <span>祐天寺若麦</span>
+            </div>
+          </section>
+        </div>
+        <p class="hero-note">结果更偏“气质接近度”，不是单纯按内向外向粗暴分人。</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel glass-card" id="intro-panel">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">How It Works</p>
+            <h2>题目会覆盖社交、关系、表达、冲突、野心和临场反应</h2>
+          </div>
+          <p class="section-note">每题都是单选。选项文案会随机打乱，所以别想着背答案。</p>
+        </div>
+
+        <div class="intro-grid">
+          <article>
+            <h3>真心浓度</h3>
+            <p>你是会把情绪认真攥在手里的人，还是更擅长轻巧过关。</p>
+          </article>
+          <article>
+            <h3>体面雷达</h3>
+            <p>你到底有多在意场面、形象、赢法和别人眼里的自己。</p>
+          </article>
+          <article>
+            <h3>执行压强</h3>
+            <p>事情一来你会立刻推进，还是更习惯先缓冲、先观察。</p>
+          </article>
+          <article>
+            <h3>关系执念</h3>
+            <p>对你来说，留住重要的人和局，到底有多重要。</p>
+          </article>
+          <article>
+            <h3>野生直觉</h3>
+            <p>你活得更像设计过的剧本，还是更像突然拐弯的猫。</p>
+          </article>
+          <article>
+            <h3>结果展示</h3>
+            <p>除了主结果，还会给你一个副人格倾向和一句适合发出去的分享文案。</p>
+          </article>
+        </div>
+
+        <div class="intro-actions">
+          <button class="primary-button" id="start-button">开始测试</button>
+        </div>
+      </section>
+
+      <section class="panel glass-card hidden" id="quiz-panel">
+        <div class="quiz-head">
+          <div>
+            <p class="eyebrow">Question</p>
+            <h2 id="question-count">第 1 / 43 题</h2>
+          </div>
+          <span class="progress-badge" id="progress-badge">进度 3%</span>
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <article class="question-card">
+          <h3 id="question-text"></h3>
+          <div class="options" id="options"></div>
+        </article>
+      </section>
+
+      <section class="panel glass-card hidden" id="result-panel">
+        <div class="result-top">
+          <div class="result-copy">
+            <p class="eyebrow">Your Result</p>
+            <h2 id="result-title"></h2>
+            <p class="result-alias" id="result-alias"></p>
+            <p class="result-overview" id="result-overview"></p>
+            <div class="result-tags" id="result-tags"></div>
+          </div>
+
+          <div class="result-badge-wrap">
+            <div class="result-badge" id="result-badge">
+              <span class="result-band" id="result-band"></span>
+              <strong id="result-badge-name"></strong>
+            </div>
+            <p class="result-shareline" id="result-shareline"></p>
+          </div>
+        </div>
+
+        <section class="result-grid">
+          <article class="card-block">
+            <div class="block-head">
+              <h3>你的人格侧写</h3>
+              <p>五个维度不是谁高谁低更好，只是说明你平时怎么活。</p>
+            </div>
+            <div class="dimension-grid" id="dimension-grid"></div>
+          </article>
+
+          <article class="card-block">
+            <div class="block-head">
+              <h3>匹配排名</h3>
+              <p>主结果之外，副人格也能看出你的第二气质来源。</p>
+            </div>
+            <div class="ranking-list" id="ranking-list"></div>
+          </article>
+        </section>
+
+        <section class="detail-grid">
+          <article class="card-block">
+            <h3>你的优点</h3>
+            <div class="pill-list" id="strength-list"></div>
+          </article>
+          <article class="card-block">
+            <h3>容易卡住的地方</h3>
+            <p id="blind-spot"></p>
+          </article>
+          <article class="card-block">
+            <h3>关系模式</h3>
+            <p id="connection-style"></p>
+          </article>
+          <article class="card-block">
+            <h3>在乐队里你会负责</h3>
+            <p id="band-role"></p>
+          </article>
+        </section>
+
+        <div class="result-actions">
+          <button class="secondary-button" id="share-button">生成分享文案</button>
+          <button class="secondary-button" id="copy-button">复制结果</button>
+          <button class="primary-button" id="restart-button">再测一次</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
