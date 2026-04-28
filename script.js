@@ -173,25 +173,25 @@ const questions = [
     prompt: "刚到一个半熟不熟的局，你通常会：",
     options: [
       {
-        title: "先安静观察一下空气",
+        title: "先缩在边上读空气",
         text: "让心里先有个底，再决定自己怎么出现。",
         scores: makeScores(["tomori", 3], ["mutsumi", 2]),
         traits: makeTraits(4, 1, 1, 2, 1)
       },
       {
-        title: "很快找个口子融进去",
+        title: "马上给自己找个切入口",
         text: "至少别让自己像个落单背景板。",
         scores: makeScores(["anon", 3], ["nyamu", 2]),
         traits: makeTraits(2, 4, 2, 2, 2)
       },
       {
-        title: "看现场缺什么就去补位",
+        title: "谁缺人手我就先顶上",
         text: "有事做反而更自然，省得尬站着。",
         scores: makeScores(["taki", 3], ["umiri", 2]),
         traits: makeTraits(2, 2, 4, 2, 1)
       },
       {
-        title: "被某个有趣角落勾走",
+        title: "先被有意思的东西拐跑",
         text: "先按感觉移动，别急着合群。",
         scores: makeScores(["rana", 3], ["uika", 2]),
         traits: makeTraits(3, 1, 1, 1, 4)
@@ -202,25 +202,25 @@ const questions = [
     prompt: "朋友回你消息忽快忽慢，你心里更像：",
     options: [
       {
-        title: "是不是我哪里说得不对",
+        title: "完了，我是不是说错话了",
         text: "嘴上不说，心里已经开始小作文。",
         scores: makeScores(["tomori", 3], ["mutsumi", 2]),
         traits: makeTraits(4, 1, 1, 3, 1)
       },
       {
-        title: "先补个轻松表情包",
+        title: "先发个表情包装没事",
         text: "至少场面别先死在这里。",
         scores: makeScores(["anon", 3], ["nyamu", 1]),
         traits: makeTraits(2, 4, 2, 2, 2)
       },
       {
-        title: "不爽，但先记一笔",
+        title: "先不说，但这事我记住了",
         text: "下次要么说清楚，要么少浪费时间。",
         scores: makeScores(["taki", 2], ["umiri", 3]),
         traits: makeTraits(1, 2, 4, 1, 1)
       },
       {
-        title: "先替对方找理由",
+        title: "先给对方找个台阶下",
         text: "但我会悄悄记住这段关系现在是什么温度。",
         scores: makeScores(["soyo", 3], ["sakiko", 2]),
         traits: makeTraits(2, 4, 2, 4, 1)
@@ -231,25 +231,25 @@ const questions = [
     prompt: "你更容易被哪种瞬间击中？",
     options: [
       {
-        title: "一句别人没放在心上的话",
+        title: "一句别人说完就忘的话",
         text: "但我会记很久。",
         scores: makeScores(["tomori", 3], ["mutsumi", 2]),
         traits: makeTraits(4, 1, 1, 3, 1)
       },
       {
-        title: "全场注意力突然落到我身上",
+        title: "所有人突然都在看我",
         text: "而且我刚好状态不错。",
         scores: makeScores(["nyamu", 3], ["anon", 2]),
         traits: makeTraits(2, 4, 3, 2, 3)
       },
       {
-        title: "有人关键时刻顶上来",
+        title: "关键时刻真有人扛住了",
         text: "那种靠谱会让我立刻加分。",
         scores: makeScores(["taki", 3], ["umiri", 2]),
         traits: makeTraits(2, 2, 4, 2, 1)
       },
       {
-        title: "一个很对味的发光时刻",
+        title: "那种一秒点亮全场的瞬间",
         text: "像舞台灯忽然全亮了。",
         scores: makeScores(["uika", 3], ["rana", 2]),
         traits: makeTraits(3, 3, 2, 2, 4)
@@ -260,25 +260,25 @@ const questions = [
     prompt: "如果要和人一起做项目，你最容易变成：",
     options: [
       {
-        title: "那个负责真正想表达什么的人",
+        title: "会一直追问“我们到底想说啥”的人",
         text: "方向不对，做再多都像空转。",
         scores: makeScores(["tomori", 2], ["sakiko", 2], ["uika", 1]),
         traits: makeTraits(4, 2, 2, 2, 2)
       },
       {
-        title: "那个把门面和气氛先撑起来的人",
+        title: "先把场子和门面都架起来的人",
         text: "至少大家看上去先像一支队伍。",
         scores: makeScores(["anon", 3], ["nyamu", 2]),
         traits: makeTraits(2, 4, 3, 2, 2)
       },
       {
-        title: "那个直接推进进度的人",
+        title: "会说“别聊了先开干”的人",
         text: "先别聊理想，先动。",
         scores: makeScores(["taki", 3], ["umiri", 2]),
         traits: makeTraits(1, 2, 4, 2, 1)
       },
       {
-        title: "那个统筹关系和秩序的人",
+        title: "一边稳人心一边稳流程的人",
         text: "别让项目先死于内部爆炸。",
         scores: makeScores(["soyo", 3], ["sakiko", 2]),
         traits: makeTraits(2, 4, 3, 4, 1)
@@ -289,25 +289,25 @@ const questions = [
     prompt: "你更怕哪种社交事故？",
     options: [
       {
-        title: "真心话被当成怪话",
+        title: "认真说的话被当成怪发言",
         text: "那种错位感很伤。",
         scores: makeScores(["tomori", 3], ["mutsumi", 2]),
         traits: makeTraits(4, 1, 1, 3, 1)
       },
       {
-        title: "当众翻车，体面归零",
+        title: "在所有人面前当场社死",
         text: "我可以失误，但别在那么多人面前。",
         scores: makeScores(["anon", 2], ["nyamu", 3]),
         traits: makeTraits(2, 4, 3, 1, 2)
       },
       {
-        title: "一群人磨蹭半天啥也没成",
+        title: "磨了半天结果还在原地",
         text: "比丢脸更让我崩溃。",
         scores: makeScores(["umiri", 3], ["taki", 2]),
         traits: makeTraits(1, 2, 4, 1, 1)
       },
       {
-        title: "表面没事，关系其实已经裂开",
+        title: "表面和气，背地里已经裂了",
         text: "这种暗流最难处理。",
         scores: makeScores(["soyo", 3], ["sakiko", 1], ["uika", 1]),
         traits: makeTraits(2, 4, 2, 4, 1)
@@ -318,25 +318,25 @@ const questions = [
     prompt: "你被夸奖时，最吃这一套：",
     options: [
       {
-        title: "你真的很认真地在感受世界",
+        title: "“你真的很会认真喜欢东西”",
         text: "这种评价会让我安静高兴很久。",
         scores: makeScores(["tomori", 3], ["mutsumi", 2]),
         traits: makeTraits(4, 1, 1, 2, 2)
       },
       {
-        title: "你很会来事，跟你待着很轻松",
+        title: "“有你在就不会冷场”",
         text: "这说明我场子没白撑。",
         scores: makeScores(["anon", 3], ["nyamu", 2]),
         traits: makeTraits(2, 4, 2, 2, 2)
       },
       {
-        title: "有你在，事就会落地",
+        title: "“这事交给你我就放心了”",
         text: "这种夸法非常对我胃口。",
         scores: makeScores(["taki", 2], ["umiri", 3]),
         traits: makeTraits(1, 2, 4, 2, 1)
       },
       {
-        title: "你一出现，氛围就亮了",
+        title: "“你一来，整个画面就对了”",
         text: "很像在夸我的存在方式。",
         scores: makeScores(["uika", 3], ["rana", 2]),
         traits: makeTraits(3, 3, 2, 2, 4)
@@ -347,25 +347,25 @@ const questions = [
     prompt: "计划临时取消，你通常会：",
     options: [
       {
-        title: "失落挺久",
+        title: "会闷闷地失落好一阵",
         text: "因为我已经认真期待过了。",
         scores: makeScores(["tomori", 2], ["mutsumi", 2], ["uika", 1]),
         traits: makeTraits(4, 1, 1, 3, 1)
       },
       {
-        title: "马上想备选方案",
+        title: "脑子里立刻开第二套方案",
         text: "今天总不能就这么塌了。",
         scores: makeScores(["anon", 3], ["nyamu", 2]),
         traits: makeTraits(2, 4, 3, 1, 2)
       },
       {
-        title: "不爽两分钟，然后切方案B",
+        title: "骂两句就直接切备用路线",
         text: "抱怨可以有，活还是得接着过。",
         scores: makeScores(["taki", 3], ["umiri", 2]),
         traits: makeTraits(1, 2, 4, 1, 1)
       },
       {
-        title: "那就顺着乱掉的风向走",
+        title: "算了，干脆顺着意外乱逛",
         text: "说不定会拐出更好玩的东西。",
         scores: makeScores(["rana", 3], ["uika", 2]),
         traits: makeTraits(2, 1, 1, 1, 4)
@@ -376,25 +376,25 @@ const questions = [
     prompt: "你做决定时更依赖：",
     options: [
       {
-        title: "心里那个说不清但很真的感觉",
+        title: "那个解释不清但一直在响的直觉",
         text: "讲不明白，不代表它不存在。",
         scores: makeScores(["tomori", 2], ["rana", 2], ["mutsumi", 1]),
         traits: makeTraits(4, 1, 1, 2, 4)
       },
       {
-        title: "这样做是不是更漂亮更稳妥",
+        title: "这条路够不够体面、够不够顺",
         text: "做法和做相都不能太难看。",
         scores: makeScores(["anon", 2], ["nyamu", 2], ["sakiko", 1]),
         traits: makeTraits(2, 4, 2, 2, 2)
       },
       {
-        title: "哪个最有效率、最能解决问题",
+        title: "哪种做法最省事、最能解题",
         text: "情绪可以等，卡点不能等。",
         scores: makeScores(["umiri", 3], ["taki", 2]),
         traits: makeTraits(1, 2, 4, 1, 1)
       },
       {
-        title: "哪个最能保住关系和整体平衡",
+        title: "怎么做最不容易把局搞砸",
         text: "不是每个问题都适合硬砍。",
         scores: makeScores(["soyo", 3], ["sakiko", 2]),
         traits: makeTraits(2, 4, 2, 4, 1)
@@ -405,25 +405,25 @@ const questions = [
     prompt: "你更像哪种嘴硬选手？",
     options: [
       {
-        title: "明明很在意，但就是说不出口",
+        title: "越在意越说不出来",
         text: "最后全变成沉默。",
         scores: makeScores(["mutsumi", 3], ["tomori", 2]),
         traits: makeTraits(4, 1, 1, 3, 1)
       },
       {
-        title: "明明没那么稳，还要先装得很稳",
+        title: "心里发虚，脸上还得装稳",
         text: "场面不能先输。",
         scores: makeScores(["anon", 2], ["nyamu", 2], ["sakiko", 1]),
         traits: makeTraits(2, 4, 2, 1, 2)
       },
       {
-        title: "明明是在关心，语气却像在骂人",
+        title: "明明在担心，开口却像在凶人",
         text: "我知道，但就是改不太掉。",
         scores: makeScores(["taki", 3], ["umiri", 1]),
         traits: makeTraits(2, 1, 4, 3, 1)
       },
       {
-        title: "明明心里很多，脸上还是很平",
+        title: "心里早翻江倒海，脸上还像没事",
         text: "先把表情管理好再说。",
         scores: makeScores(["sakiko", 3], ["soyo", 2]),
         traits: makeTraits(2, 4, 3, 3, 1)
@@ -434,25 +434,25 @@ const questions = [
     prompt: "你最难忍受别人哪一点？",
     options: [
       {
-        title: "敷衍别人的真心",
+        title: "把别人的认真当空气",
         text: "这种事会直接让我心冷。",
         scores: makeScores(["tomori", 3], ["uika", 2]),
         traits: makeTraits(4, 1, 2, 3, 2)
       },
       {
-        title: "让我在外面下不来台",
+        title: "让我在外头特别下不来台",
         text: "这笔账我会记很清楚。",
         scores: makeScores(["nyamu", 3], ["anon", 2]),
         traits: makeTraits(2, 4, 3, 1, 2)
       },
       {
-        title: "不负责任还理直气壮",
+        title: "摆烂了还说得像自己有理",
         text: "光想想就开始上火。",
         scores: makeScores(["taki", 2], ["umiri", 3]),
         traits: makeTraits(1, 2, 4, 1, 1)
       },
       {
-        title: "把重要关系说丢就丢",
+        title: "把重要的人说算了就算了",
         text: "这种轻飘飘我真的不行。",
         scores: makeScores(["soyo", 3], ["sakiko", 2]),
         traits: makeTraits(2, 4, 2, 4, 1)
@@ -463,25 +463,25 @@ const questions = [
     prompt: "你理想中的“被喜欢”，更接近：",
     options: [
       {
-        title: "有人真的看懂我没说出口的部分",
+        title: "有人能读懂我那些没讲明白的部分",
         text: "不是热闹，是看见。",
         scores: makeScores(["tomori", 3], ["mutsumi", 2]),
         traits: makeTraits(4, 1, 1, 3, 1)
       },
       {
-        title: "大家都觉得我可爱、聪明、会相处",
+        title: "大家都觉得我好相处又拿得出手",
         text: "被喜欢最好也带一点体面。",
         scores: makeScores(["anon", 3], ["nyamu", 2]),
         traits: makeTraits(2, 4, 2, 2, 2)
       },
       {
-        title: "别人知道我虽然不软，但真的靠得住",
+        title: "别人知道我嘴硬，但关键时刻真能靠",
         text: "我更在乎这种评价。",
         scores: makeScores(["taki", 3], ["umiri", 2]),
         traits: makeTraits(2, 2, 4, 2, 1)
       },
       {
-        title: "被当成特别的那个",
+        title: "被放在“你跟别人不一样”的位置上",
         text: "不是谁都可以替代的那种。",
         scores: makeScores(["soyo", 2], ["sakiko", 2], ["uika", 1]),
         traits: makeTraits(3, 4, 2, 4, 2)
@@ -492,25 +492,25 @@ const questions = [
     prompt: "遇到特别厉害的人，你通常会：",
     options: [
       {
-        title: "敬佩到有点自卑",
+        title: "会佩服到有一点点自卑",
         text: "然后默默把那种光感记很久。",
         scores: makeScores(["tomori", 3], ["mutsumi", 2]),
         traits: makeTraits(4, 1, 1, 2, 2)
       },
       {
-        title: "先欣赏，再努力让自己别显得太逊",
+        title: "先佩服，然后偷偷把自己绷起来",
         text: "我可以紧张，但不能太掉价。",
         scores: makeScores(["anon", 2], ["nyamu", 2], ["sakiko", 1]),
         traits: makeTraits(2, 4, 3, 1, 2)
       },
       {
-        title: "认可归认可，但还是想较一下劲",
+        title: "承认你强，但我还是想跟你碰一下",
         text: "越强的人越能激发我的不服输。",
         scores: makeScores(["sakiko", 3], ["taki", 2]),
         traits: makeTraits(2, 4, 4, 2, 1)
       },
       {
-        title: "对味就会想主动靠近",
+        title: "只要对味，我会自己贴过去",
         text: "想看看和这种人一起会碰出什么。",
         scores: makeScores(["uika", 3], ["rana", 2]),
         traits: makeTraits(3, 2, 2, 2, 4)
@@ -521,25 +521,25 @@ const questions = [
     prompt: "你对“规则”的态度更像：",
     options: [
       {
-        title: "会遵守，但总觉得自己和它不在一个频道",
+        title: "会照做，但总觉得自己没那么适配",
         text: "不是反抗，只是常常没那么贴合。",
         scores: makeScores(["tomori", 2], ["mutsumi", 2], ["rana", 1]),
         traits: makeTraits(3, 1, 1, 2, 3)
       },
       {
-        title: "能用就用，顺便让我显得更漂亮",
+        title: "规则能帮我上分的话当然用",
         text: "规则有时候也是工具。",
         scores: makeScores(["anon", 2], ["nyamu", 2], ["sakiko", 1]),
         traits: makeTraits(1, 4, 2, 1, 2)
       },
       {
-        title: "规则就是为了把事情做好",
+        title: "规则本来就是拿来提效率的",
         text: "别浪费大家时间。",
         scores: makeScores(["umiri", 3], ["taki", 2]),
         traits: makeTraits(1, 2, 4, 1, 1)
       },
       {
-        title: "不挡我路就行，挡路我就绕",
+        title: "不碍事就行，碍事我就自己拐弯",
         text: "有些感觉比规矩更值得信。",
         scores: makeScores(["rana", 3], ["uika", 2]),
         traits: makeTraits(2, 1, 2, 1, 4)
@@ -550,25 +550,25 @@ const questions = [
     prompt: "你发深夜动态更可能是：",
     options: [
       {
-        title: "一句别人看不太懂的心情",
+        title: "发一句别人多半看不懂的话",
         text: "但懂的人应该会懂。",
         scores: makeScores(["tomori", 3], ["mutsumi", 2]),
         traits: makeTraits(4, 1, 1, 2, 2)
       },
       {
-        title: "一张角度很好的图配一句轻松文案",
+        title: "发张很会拍的图，再装轻松一下",
         text: "氛围要对，情绪不能太狼狈。",
         scores: makeScores(["anon", 2], ["nyamu", 3]),
         traits: makeTraits(1, 4, 2, 1, 3)
       },
       {
-        title: "一条看似平静其实信息量很大的句子",
+        title: "丢一句表面平静、实际含义很多的话",
         text: "懂的人会开始复盘。",
         scores: makeScores(["soyo", 2], ["sakiko", 3]),
         traits: makeTraits(2, 4, 2, 3, 1)
       },
       {
-        title: "发一张月亮或甜品，不写字",
+        title: "扔张月亮、路灯或甜品图，什么都不写",
         text: "解释太多就不浪漫了。",
         scores: makeScores(["rana", 3], ["uika", 2]),
         traits: makeTraits(2, 2, 1, 1, 4)
@@ -579,13 +579,13 @@ const questions = [
     prompt: "如果朋友状态很差，你第一反应会：",
     options: [
       {
-        title: "先陪着",
+        title: "先安静陪在旁边",
         text: "不一定说很多，但我会在。",
         scores: makeScores(["tomori", 2], ["mutsumi", 2], ["uika", 1]),
         traits: makeTraits(4, 1, 1, 4, 1)
       },
       {
-        title: "先把气氛拉回来一点",
+        title: "先想办法让他别继续往下掉",
         text: "别让他一直往下掉。",
         scores: makeScores(["anon", 3], ["nyamu", 1]),
         traits: makeTraits(2, 4, 2, 2, 2)
@@ -1430,6 +1430,8 @@ const startButton = document.getElementById("start-button");
 const restartButton = document.getElementById("restart-button");
 const shareButton = document.getElementById("share-button");
 const copyButton = document.getElementById("copy-button");
+const prevButton = document.getElementById("prev-button");
+const nextButton = document.getElementById("next-button");
 
 const resultTitle = document.getElementById("result-title");
 const resultAlias = document.getElementById("result-alias");
@@ -1451,6 +1453,7 @@ let activeQuestions = [];
 let scoreState = {};
 let traitState = {};
 let latestResultProfile = null;
+let answers = [];
 
 function resetState() {
   currentIndex = 0;
@@ -1462,6 +1465,7 @@ function resetState() {
   scoreState = Object.fromEntries(Object.keys(profiles).map((key) => [key, 0]));
   traitState = Object.fromEntries(Object.keys(dimensions).map((key) => [key, 0]));
   latestResultProfile = null;
+  answers = new Array(questions.length).fill(null);
 }
 
 function shuffleArray(items) {
@@ -1496,33 +1500,23 @@ function renderQuestion() {
     button.type = "button";
     button.className = "option-button";
     button.innerHTML = `<strong>${String.fromCharCode(65 + index)}. ${option.title}</strong>`;
+    if (answers[currentIndex] === option.title) {
+      button.classList.add("selected");
+    }
     button.addEventListener("click", () => selectOption(button, option));
     optionsContainer.appendChild(button);
   });
+
+  prevButton.disabled = currentIndex === 0;
+  nextButton.disabled = !answers[currentIndex];
+  nextButton.textContent = currentIndex === activeQuestions.length - 1 ? "查看结果" : "下一题";
 }
 
 function selectOption(button, option) {
   Array.from(optionsContainer.children).forEach((node) => node.classList.remove("selected"));
   button.classList.add("selected");
-
-  Object.entries(option.scores).forEach(([key, value]) => {
-    scoreState[key] += value;
-  });
-
-  Object.entries(option.traits).forEach(([key, value]) => {
-    traitState[key] += value;
-  });
-
-  setTimeout(() => {
-    currentIndex += 1;
-
-    if (currentIndex < activeQuestions.length) {
-      renderQuestion();
-      return;
-    }
-
-    showResult();
-  }, 180);
+  answers[currentIndex] = option.title;
+  nextButton.disabled = false;
 }
 
 function normaliseTrait(value) {
@@ -1552,6 +1546,8 @@ function buildShareText(primary, secondary) {
 }
 
 function showResult() {
+  rebuildScoresFromAnswers();
+
   const ranked = sortedProfiles();
   const primary = ranked[0];
   const secondary = ranked[1];
@@ -1610,6 +1606,54 @@ function showResult() {
   }).join("");
 }
 
+function rebuildScoresFromAnswers() {
+  scoreState = Object.fromEntries(Object.keys(profiles).map((key) => [key, 0]));
+  traitState = Object.fromEntries(Object.keys(dimensions).map((key) => [key, 0]));
+
+  activeQuestions.forEach((question, index) => {
+    const selectedTitle = answers[index];
+    if (!selectedTitle) {
+      return;
+    }
+
+    const selectedOption = question.options.find((option) => option.title === selectedTitle);
+    if (!selectedOption) {
+      return;
+    }
+
+    Object.entries(selectedOption.scores).forEach(([key, value]) => {
+      scoreState[key] += value;
+    });
+
+    Object.entries(selectedOption.traits).forEach(([key, value]) => {
+      traitState[key] += value;
+    });
+  });
+}
+
+function goPrevQuestion() {
+  if (currentIndex === 0) {
+    return;
+  }
+
+  currentIndex -= 1;
+  renderQuestion();
+}
+
+function goNextQuestion() {
+  if (!answers[currentIndex]) {
+    return;
+  }
+
+  if (currentIndex === activeQuestions.length - 1) {
+    showResult();
+    return;
+  }
+
+  currentIndex += 1;
+  renderQuestion();
+}
+
 async function shareResult() {
   if (!latestResultProfile) {
     return;
@@ -1655,3 +1699,5 @@ startButton.addEventListener("click", startQuiz);
 restartButton.addEventListener("click", startQuiz);
 shareButton.addEventListener("click", shareResult);
 copyButton.addEventListener("click", copyResult);
+prevButton.addEventListener("click", goPrevQuestion);
+nextButton.addEventListener("click", goNextQuestion);
