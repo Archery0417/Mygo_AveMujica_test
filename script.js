@@ -1495,7 +1495,7 @@ function renderQuestion() {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "option-button";
-    button.innerHTML = `<strong>${String.fromCharCode(65 + index)}. ${option.title}</strong><span>${option.text}</span>`;
+    button.innerHTML = `<strong>${String.fromCharCode(65 + index)}. ${option.title}</strong>`;
     button.addEventListener("click", () => selectOption(button, option));
     optionsContainer.appendChild(button);
   });
